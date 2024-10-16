@@ -1,0 +1,69 @@
+<!doctype html>
+
+<head>
+    <title>HUDHUD RentCar</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!--navigasi bar-->
+        <div class="container-navbar">
+            <ul class="ul-navbar">
+                <li class="li-navbar">
+                    <a href="index.html" class="a-navbar">HOME</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="tentang kami.html" class="a-navbar">TENTANG KAMI</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="layanan.html" class="a-navbar">LAYANAN</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="kontak.html" class="a-navbar">KONTAK</a>
+                </li>
+            </ul>
+        </div>
+
+        <!--navigasi selesai-->
+
+        <!--content-->
+        <div class="container-content">
+            <div class="cars-container">
+            <!-- Mobil 1 -->
+            <div class="car-item">
+                <img src="mobil 1.png" class="img-content" alt="Mobil 1" />
+                <p>Mobil 1</p>
+                <button class="btn-pesan" onclick="openModal('Mobil 1')">Pesan</button>
+            </div>
+            <!-- Mobil 2 -->
+            <div class="car-item">
+                <img src="mobil 2.png" class="img-content" alt="Mobil 2" />
+                <p>Mobil 2</p>
+                <button class="btn-pesan" onclick="openModal('Mobil 2')">Pesan</button>
+            </div>
+            <p>GASKEUN!</p>
+        </div>
+        <!--content selesai-->
+
+<!-- Order Modal -->
+<div id="orderModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Pesan Mobil</h2>
+        <form id="orderForm">
+            <label for="car">Mobil:</label>
+            <input type="text" id="car" name="car" readonly><br><br>
+            
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+                    <button type="submit">Pesan Sekarang</button>
+                </form>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

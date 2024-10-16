@@ -1,0 +1,170 @@
+*, html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {}
+
+.container-navbar{
+    width: 100%;
+    height: 10vh;
+}
+
+.ul-navbar {
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.li-navbar {
+    list-style-type: none;
+    padding: 20px;
+    margin: 5px;
+    color: aliceblue;
+    font-size: 30px;
+}
+
+.li-navbar:hover {
+    background-color: gray;
+    transition: .5s ease-in-out;
+    transition-delay: .3s;
+    border-radius: 8px;
+}
+
+.a-navbar {
+    color: black;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.layanan {
+    margin-bottom: 30px;
+}
+
+.layanan h2 {
+    font-size: 22px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.layanan p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: black;
+}
+
+.container-content {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.a-content {
+    background-color: grey;
+    color: black;
+    width: 720px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: gray;
+    color: white;
+    border-radius: 80px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-border-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.img-content {
+    width: 30%;
+    height: 30%;
+    background-color: gray;
+    color: gray;
+    border-radius: 80px;
+}
+
+/* Container mobil */
+.cars-container {
+    display: flex;
+    gap: 20px;
+}
+
+.car-item {
+    text-align: center;
+    width: 200px; /* Menentukan lebar elemen mobil */
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img-content {
+    width: 100%; /* Gambar akan menyesuaikan lebar div */
+    height: auto;
+    border-radius: 5px;
+}
+
+p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.btn-pesan {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-pesan:hover {
+    background-color: #45a049;
+}
+
+/* Modal styling (sudah ada sebelumnya) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 50%;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.container-footer {
+    height: 10vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1-footer {
+    font-size: 40px;
+    color: black;
+}
